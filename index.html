@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap">
+    <style>
+        /* cabeçalho */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #08252a;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header h1 {
+            color: #d6d6d6;
+            font-size: 24px;
+
+        }
+
+        header span {
+            color: white;
+        }
+
+        .navegacao_primaria {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            padding: 10px;
+
+        }
+
+        .navegacao_primaria li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .section-div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #1c5361;
+        }
+
+        .section-div > div {
+            flex: 1;
+            margin: 10px;
+        }
+
+        .digitando span {
+            font-size: 24px;
+            color: white;
+        }
+
+        .quem-sou-eu {
+            text-align: center;
+            padding: 20px;
+            background-color: #08252a;
+            color: white;
+        }
+
+        .img-quem-sou-eu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #1c5361;
+            color: white;
+        }
+
+        .img-quem-sou-eu div {
+            flex: 1;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .minha-foto {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        .OLA {
+            font-size: 24px;
+            color: white;
+        }
+
+        .img-quem-sou-eu div a {
+            color: black;
+            text-decoration: underline;
+        }
+
+        .conhecimentos {
+            text-align: center;
+            padding: 20px;
+            background-color: #08252a;
+            color: white;
+        }
+
+        .conhecimentos h2 {
+            font-size: 24px;
+            color: white;
+        }
+
+        .conhecimentos-quadrados {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: #1c5361;
+        }
+
+        .conhecimentos-quadrados div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .conhecimentos-quadrados img {
+            max-width: 100px;
+            height: auto;
+        }
+
+        .galeria-azul,
+        .galeria,
+        .video {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .galeria-azul h2,
+        .video h2 {
+            font-size: 24px;
+        }
+
+        .video iframe {
+            width: 100%;
+            height: 400px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .section-div {
+                padding: 10px;
+            }
+            .section-div > div {
+                flex: 100%;
+            }
+            .img-quem-sou-eu {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <h1>Caio<span>Henrique</span></h1>
+        <nav>
+            <ul class="navegacao_primaria">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#img">Sobre</a></li>
+                <li><a href="#Contato">Contato</a></li>
+                <li><a href="#conhe-">Conhecimentos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section aria-label="Seção currículo download Caio" class="section-div">
+  
+        <div>
+            <h2> <span>Seja bem vindo ao meu portfólio!</span></h2>
+
+            <p>Olá, meu nome é Caio e este é o meu espaço digital onde compartilho um pouco sobre quem eu sou e o
+                que faço. Aqui você encontrará uma variedade de projetos, habilidades e experiências que ilustram minha
+                jornada profissional e criativa.</p>
+
+            <a href="Sobre mim.pdf" target="_blank">Mais informações</a>
+
+        </div>
+
+        <div>
+            <img class="img-fatec" src="img/AZUL ESCURO.png" alt="FATEC">
+        </div>
+
+    </section>
+
+    <section class="quem-sou-eu">
+        
+        <h2>Sobre mim</h2>
+    </section>
+        <!-- Botões de acessibilidade -->
+        <div id="accessibility-buttons">
+            <button id="increase-font" onclick="changeFontSize(1)">+ TEXTO</button>
+            <button id="decrease-font" onclick="changeFontSize(-1)">- TEXTO</button>
+        </div>
+    <section id="img" class="img-quem-sou-eu">
+        <div>
+            <h2 class="OLA"> Olá, eu sou Caio! 
+                <br>
+            </h2>
+            <p>Além dos projetos, você também encontrará informações sobre as minhas habilidades e conhecimentos em diversas áreas. </p>
+            <br>
+            <!-- SOBRE MIM -->
+            <a href="conhecimentos.pdf" target="_blank">CLIQUE AQUI PARA LER MAIS!</a>
+        </div>
+        <div>
+            <img class="minha-foto" src="img/minha foto.jpg" alt="Minha foto">
+        </div>
+    </section>
+
+<!-- CONTATO -->
+
+    <section class="contato">
+        <h2 id="Contato">Contato</h2>
+        <br>
+        <br>
+        <form action="enviar.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+    
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+<!-- Conhecimentos -->
+
+    <section class="conhecimentos">
+        <h2 id="conhe-">Conhecimentos</h2>
+    </section>
+
+    <section class="conhecimentos-quadrados">
+        <div>
+            <img class="img-css" src="img/css.png" alt="CSS">
+            <img class="img-html" src="img/html-5.png" alt="HTML">
+            <img class="img-java" src="img/script-java.png" alt="Java">
+            <img class="img-ps" src="img/camera-photoshop.png" alt="Photoshop">
+            <img class="img-excel" src="img/excel.png" alt="Excel">
+            <img class="img-corel" src="img/icons8-corel-draw-500.png" alt="Corel Draw">
+        </div>
+    </section>
+
+    <section class="galeria-azul">
+        <h2>Galeria</h2>
+    </section>
+
+    </section>
+
+    <section class="video">
+        <iframe height="600px" src="https://www.youtube.com/embed/K4DyBUG242c?si=ZYgI9duHr8rAts0a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+
+    <script>
+        // Função para aumentar ou diminuir o tamanho do texto
+        function changeFontSize(change) {
+            var paragraphs = document.querySelectorAll('p');
+            paragraphs.forEach(function (p) {
+                var currentSize = parseFloat(window.getComputedStyle(p).fontSize);
+                var newSize = currentSize + change;
+                p.style.fontSize = newSize + 'px';
+            });
+
+            var headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+            headings.forEach(function (heading) {
+                var currentSize = parseFloat(window.getComputedStyle(heading).fontSize);
+                var newSize = currentSize + change;
+                heading.style.fontSize = newSize + 'px';
+            });
+        }
+    </script>
+
+</body>
+
+</html>
